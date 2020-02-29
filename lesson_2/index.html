@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../script/vue.js"></script>
+    <script src="./app.js"></script>
+    <link rel="stylesheet" href="./style.css">
+
+    <title>VueJS lesson 2</title>
+</head>
+<body>
+    <div id="app" class="main-div">
+        <div class="player-chart" v-for="(player, index) in players">
+            <table style="width:100%">
+                <tr>
+                  <th>Name:</th>
+                  <td>{{player.name}}</td>
+                </tr>
+                <tr>
+                    <th>Bio:</th>
+                    <td>{{player.bio}}</td>
+                </tr>
+                <tr>
+                    <th>Caps:</th>
+                    <td>{{player.caps}}</td>
+                </tr>
+                <tr>
+                    <th>Club:</th>
+                    <td>{{player.club}}</td>
+                </tr>
+              </table>
+              <a href="#" v-on:click="moveToRead(index)">Done</a>
+              <br>
+              <br>
+        </div>
+
+        <h1>Players Red Information</h1>
+        <div class="player-chart" v-for="(player, index) in players_read">
+            <table style="width:100%">
+                <caption>{{index}}</caption>
+                <tr>
+                  <th>Name:</th>
+                  <td>{{player.name}}</td>
+                </tr>
+                <tr>
+                    <th>Caps:</th>
+                    <td>{{player.caps}}</td>
+                </tr>
+                <tr>
+                    <th>Club:</th>
+                    <td>{{player.club}}</td>
+                </tr>
+            </table>
+              <br>
+              <br>
+        </div>
+    </div>
+</body>
+</html>

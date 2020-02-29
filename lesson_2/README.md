@@ -9,6 +9,7 @@ This lesson contains;
 - array operation
     - array.splice(index,1) // remove
     - array.push(item) // append
+- htpp server
 
 ## created()
 Each Vue instance goes through a series of initialization steps when it’s created - for example, it needs to set up data observation, compile the template, mount the instance to the DOM, and update the DOM when data changes. Along the way, it also runs functions called lifecycle hooks, giving users the opportunity to add their own code at specific stages.
@@ -113,3 +114,35 @@ Attaches an event listener to the element. The event type is denoted by the argu
 <!-- method handler -->
 <button v-on:click="doThis"></button>
 ```
+
+## Fetch
+```javascript
+window.addEventListener('load', () => {
+
+  window.vue = new Vue({
+    el: '#app',
+    name: 'Cart',
+    data: {
+      isLoading: true,
+      cart: [],
+      saved: []
+    },
+    created() {
+      fetch('./data.json')
+        .then((res) => { return res.json() })
+        .then((res) => {
+          // isLoading set as false because json loaded.
+          this.isLoading = false;
+          this.cart = res.cart;
+          this.saved = res.saved;
+        })
+    }
+  })
+
+});
+```
+
+## Simple HTTPServer
+you can use python simple server for HTTP serving
+python -m SimpleHTTPServer 8000
+Python 2.7.16 (default, Dec 13 2019, 18:00:32) 

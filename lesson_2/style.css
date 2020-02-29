@@ -1,0 +1,14 @@
+.main-div {
+    background-color: rgb(163, 223, 231);
+  }
+  .player-chart {
+    background-color: #d7e8eb;
+  }
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;
+}
