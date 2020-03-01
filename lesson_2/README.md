@@ -10,6 +10,7 @@ This lesson contains;
     - array.splice(index,1) // remove
     - array.push(item) // append
 - htpp server
+- variable defination in a method
 
 ## created()
 Each Vue instance goes through a series of initialization steps when it’s created - for example, it needs to set up data observation, compile the template, mount the instance to the DOM, and update the DOM when data changes. Along the way, it also runs functions called lifecycle hooks, giving users the opportunity to add their own code at specific stages.
@@ -139,6 +140,21 @@ window.addEventListener('load', () => {
     }
   })
 
+});
+```
+
+## Variable Defination
+To use variables outside Vue instance scope, you have to created either a method/data prop or computed prop because inside Vue template you can only use VueJS properties.
+
+*keyword is const to define variable.
+
+```javascript
+const globalVar = 'global variable'; // not visible to template
+
+new Vue({
+    data() {
+        vueProp: 'vue variable' // visible to template
+    }
 });
 ```
 
