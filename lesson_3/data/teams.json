@@ -1,0 +1,19 @@
+{
+    "team": {
+        "name": "Team A",
+        "members": [
+            {"name": "Aziz", "score": "57"},
+            {"name": "Alexander", "score" : "15"},
+            {"name": "Lawson", "score": "20"},
+            {"name": "Lee", "score":"100"},
+            {"name": "Davis", "score":"22"},
+            {"name": "Michelle", "score": "34"},
+            {"name": "Margaret", "score": "50"},
+            {"name": "Harris", "score": "1"},
+            {"name": "Brenda", "score": "0"},
+            {"name": "Parker", "score": "90"},
+            {"name": "Mendoza", "score": "100"}
+        ]
+        
+    }
+}
