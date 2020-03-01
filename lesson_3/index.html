@@ -25,6 +25,7 @@
                     <th scope="col">Name</th>
                     <th scope="col">Team</th>
                     <th scope="col">Point</th>
+                    <th scope="col">Operation</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -33,6 +34,7 @@
                     <td>{{item.name}}</td>
                     <td>{{team_name}}</td>
                     <td>{{item.score}}</td>
+                    <td><a href="#" v-on:click="deleteMember(index)">Delete</a> </td>
                   </tr>
                 </tbody>
             </table>

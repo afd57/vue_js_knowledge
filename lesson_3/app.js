@@ -35,7 +35,11 @@ window.addEventListener("load", () => {
             orderedItems() {
                 this.member_list = this.member_list.sort(
                     (a,b) => (parseInt(a.score) > parseInt(b.score)) ? -1:1);
+            },
+            deleteMember(index){
+                this.member_list.splice(index,1)
             }
+            
         }
 
     })
