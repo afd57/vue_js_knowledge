@@ -1,6 +1,9 @@
 # Lesson 1
 This lesson contains; starting Vue.js and hello word example
 
+## Installation
+https://vuejs.org/v2/guide/installation.html
+
 ## Usefull Material
 https://github.com/vuejs/awesome-vue  the git repo has a lot of useful material.
 
