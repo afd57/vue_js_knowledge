@@ -46,3 +46,11 @@ methods: {
     }
 }
 ```
+
+## Example Picture
+![](../images/1.png)
+![](../images/2.png)
+
+## Todo 
+- If score less than mean change color as red.
+- If score bigger than mean change color as green.
