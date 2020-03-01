@@ -162,3 +162,9 @@ new Vue({
 you can use python simple server for HTTP serving
 python -m SimpleHTTPServer 8000
 Python 2.7.16 (default, Dec 13 2019, 18:00:32) 
+
+
+**
+To find the process/service listening on a particular port, type (specify the port).
+
+lsof -i :8000
